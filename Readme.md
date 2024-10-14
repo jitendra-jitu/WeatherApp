@@ -63,5 +63,36 @@ Example
 
 # Code Explanation
 
+1 HTML Structure
+---------------
+The HTML file includes:
+
+An input field for entering the city name.
+Buttons for fetching weather data and downloading the report.
+A section to display the fetched weather results.
+
+
+2 JavaScript Functionality
+-----------------------
+
+The JavaScript file handles:
+
+Fetching weather data from the API when the Fetch Weather button is clicked.
+Displaying the results in the designated area.
+Generating a CSV file from the weather data when the Download Report button is clicked.
+
+3 CSS Styles
+----------
+The CSS file provides styles for a clean and modern interface, with responsive design for different screen sizes.
+
+# Contribution
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Acknowledgements
+OpenWeatherMap for providing the weather data API.
+Inspiration from various weather apps and tutorials.
 
 
