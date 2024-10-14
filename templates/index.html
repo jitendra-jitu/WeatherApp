@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Weather Report</h1>
+        <div class="weather-form">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)" required>
+            <button id="fetchWeatherBtn">Get Weather</button>
+        </div>
+        <div class="weather-result" id="weatherResult">
+            <table>
+                <tr>
+                    <th>City Name</th>
+                    <td id="cityName" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Temperature</th>
+                    <td id="temperature" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td id="description" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Humidity</th>
+                    <td id="humidity" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Wind Speed</th>
+                    <td id="windSpeed" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Pressure</th>
+                    <td id="pressure" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Visibility</th>
+                    <td id="visibility" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>UV Index</th>
+                    <td id="uvIndex" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Sunrise</th>
+                    <td id="sunrise" class="default-value">-</td>
+                </tr>
+                <tr>
+                    <th>Sunset</th>
+                    <td id="sunset" class="default-value">-</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Added gap using a class -->
+        <div class="gap"></div> <!-- Added gap -->
+        <button id="downloadReportBtn">Download Report</button> 
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
