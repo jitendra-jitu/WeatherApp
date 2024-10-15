@@ -9,10 +9,12 @@
 <body>
     <div class="container">
         <h1>Welcome to Weather Report</h1>
+        
         <div class="weather-form">
             <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)" required>
-            <button id="fetchWeatherBtn">Get Weather</button>
+            <button id="fetchWeatherBtn" class="use-weather-btn"><span>Get Weather</span></button>
         </div>
+        
         <div class="weather-result" id="weatherResult">
             <table>
                 <tr>
@@ -57,9 +59,8 @@
                 </tr>
             </table>
         </div>
-        <!-- Added gap using a class -->
         <div class="gap"></div> <!-- Added gap -->
-        <button id="downloadReportBtn">Download Report</button> 
+        <button id="downloadReportBtn" class="download-btn">Download Report</button> <!-- Added class for styling -->
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>

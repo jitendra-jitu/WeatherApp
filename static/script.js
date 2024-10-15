@@ -1,8 +1,9 @@
 // Utility function to show a pop-up alert
 function showPopup(message) {
-  alert(message); // Replace this with a modal if desired
+  alert(message);
 }
 
+// Fetch weather data on button click
 document.getElementById('fetchWeatherBtn').addEventListener('click', function () {
   const cityInput = document.getElementById('cityInput').value.trim();
 
@@ -42,11 +43,11 @@ document.getElementById('fetchWeatherBtn').addEventListener('click', function ()
     })
     .catch(error => {
       console.error('Fetch error:', error.message);
-      showPopup(error.message); // Show error pop-up
+      showPopup(error.message);
     });
 });
 
-// Download report button event listener
+// Download weather report on button click
 document.getElementById('downloadReportBtn').addEventListener('click', function () {
   const cityInput = document.getElementById('cityInput').value.trim();
 
@@ -84,6 +85,6 @@ document.getElementById('downloadReportBtn').addEventListener('click', function 
     })
     .catch(error => {
       console.error('Download error:', error.message);
-      showPopup(error.message); // Show error pop-up
+      showPopup(error.message);
     });
 });
